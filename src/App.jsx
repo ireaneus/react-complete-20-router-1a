@@ -6,8 +6,8 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path='/' exact>
-          <Redirect to='/verses' />
+        <Route path="/" exact>
+          <Redirect to="/verses" />
         </Route>
         <Route path="/verses" exact>
           <AllVerses />
