@@ -4,13 +4,20 @@
 
 ## react-router-dom v5.3.2
 
-- BrowserRouter, Switch, Route, Redirect, useHistory, Prompt, useLocation
+[https://v5.reactrouter.com/]
+
+- BrowserRouter, Switch, Route, Redirect, useHistory, Prompt, useLocation, useRouteMatch
 - Prompt - when={useState} message=((location) => 'message')
-- useHistory.push('/verse?sort=asc')
-- useLocation
+- useHistory.push (location, POP,PUSH)
+- useLocation pathname
+- useRouteMatch params Path (original path), url (hard returned path) console.log(match)
 
-## react-router-dom@latest (6.3.4)
+## react-router-dom@latest (6.4.1)
 
-- BrowserRouter, Routes, Route(element), Outlet
+[https://reactrouter.com/en/main]
+
+- BrowserRouter, Routes, Route(element), Outlet, Navigate
+- Outlet used for child routes ??
+- Navigate replaces Redirect
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-kqxzip)
