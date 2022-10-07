@@ -1,9 +1,14 @@
-import QuoteForm from "../components/quotes/QuoteForm";
+import { useHistory } from 'react-router-dom';
+import QuoteForm from '../components/quotes/QuoteForm';
 
 const NewVerse = () => {
-  const addQuoteHandler = quoteData => {
-    console.log(quoteData)
-  }
-  return <QuoteForm onAddQuote={addQuoteHandler}/>
+  const history = useHistory();
+
+  const addVerseHandler = (verseData) => {
+    console.log(verseData);
+
+    history.push('/verses');
+  };
+  return <QuoteForm onAddQuote={addVerseHandler} />;
 };
 export default NewVerse;

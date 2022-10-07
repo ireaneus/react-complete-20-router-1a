@@ -1,6 +1,6 @@
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import { AllVerses, NewVerse, VerseDetails } from './pages';
+import { AllVerses, NewVerse, NotFound, VerseDetails } from './pages';
 
 function App() {
   return (
@@ -17,6 +17,9 @@ function App() {
         </Route>
         <Route path="/addverse">
           <NewVerse />
+        </Route>
+        <Route path="*">
+          <NotFound />
         </Route>
       </Switch>
     </Layout>
